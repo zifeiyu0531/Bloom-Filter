@@ -16,8 +16,8 @@ public class Test {
         System.out.println(bloomFilter.count());
 
         BloomFilter<Integer> bloomFilterInt = new BloomFilter.Builder()
-                                                .setElementNums(1000)
-                                                .setFalsePositiveRate(0.1)
+                                                .setElementNums(100000)
+                                                .setFalsePositiveRate(0.001)
                                                 .build();
         Random r = new Random();
         Map<Integer, Boolean> map = new HashMap<>();
