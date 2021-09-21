@@ -27,8 +27,8 @@ class BloomFilter<E> {
     }
 
     public static class Builder<E> {
-        private int elementNums; // 元素个数
-        private double falsePositiveRate; // 错误率
+        private int elementNums=1000; // 元素个数
+        private double falsePositiveRate=0.01; // 错误率
 
         public Builder() {
         }
